@@ -37,7 +37,7 @@ const Records = () => {
                 </thead>
                 <tbody>
                   {recordsResponse?.content.map(record => (
-                    <tr Key={record.id}>    
+                    <tr key={record.id}>    
                       <td>{formatDate(record.moment)}</td>
                       <td>{record.name}</td>            
                       <td>{record.age}</td>
